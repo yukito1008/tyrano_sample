@@ -1,46 +1,82 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="東北に行きたいゲーム"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+おはようございます！[l][r]
 
-メロスは激怒した。[l][r]
-
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+どこへ行こう？[r]
+[link target=*tag_2] →南 [endlink][r]
+[link target=*tag_4] →西 [endlink][r]
+[link target=*tag_6] →東 [endlink][r]
+[link target=*tag_8] →北 [endlink][r]
 [s]
 
-*tag_sleep
+*tag_2
+どこへ行こう？[r]
+[link target=*tag_22] →南 [endlink][r]
+[link target=*tag_24] →西 [endlink][r]
+[link target=*tag_26] →東 [endlink][r]
+[link target=*tag_28] →北 [endlink][r]
+[s]
+
+*tag_4
+どこへ行こう？[r]
+[link target=*tag_24] →南 [endlink][r]
+[link target=*tag_44] →西 [endlink][r]
+[link target=*tag_46] →東 [endlink][r]
+[link target=*tag_48] →北 [endlink][r]
+[s]
+
+*tag_6
+どこへ行こう？[r]
+[link target=*tag_26] →南 [endlink][r]
+[link target=*tag_46] →西 [endlink][r]
+[link target=*tag_66] →東 [endlink][r]
+[link target=*tag_68] →北 [endlink][r]
+[s]
+
+*tag_8
+どこへ行こう？[r]
+[link target=*tag_28] →南 [endlink][r]
+[link target=*tag_48] →西 [endlink][r]
+[link target=*tag_68] →東 [endlink][r]
+[link target=*tag_88] →北 [endlink][r]
+[s]
+
+*tag_24
+*tag_26
+*tag_48
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+遠くに行きすぎたみたいだ・・・[l][r]
+どうにかして
+[jump target=*tag_back]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+*tag_22
+*tag_44
+*tag_66
+*tag_88
 
-【 BAD END 】[l][cm]
+[cm]
+
+せかいをいっしゅうして
+
+*tag_28
+*tag_46
+*tag_back
+
+おうちにもどったよー[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*tag_68
 
-[bg storage=run.jpg time=500]
+東北にたどり着いた！[l][r]
 
-[cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
-
-【 GOOD END 】[l][cm]
+~GOOD END~[l][cm]
 
 [jump target=*start]
